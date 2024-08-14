@@ -6,7 +6,7 @@ import Search from "../../../public/image/seann.svg";
 
 const Solting = () => {
   const [itemsPerPageDropdownOpen, setItemsPerPageDropdownOpen] =
-    useState(false);
+  useState(false);
   const [selectDropdownOpen, setSelectDropdownOpen] = useState(false);
   const [selectedItems, setSelectedItems] = useState(10);
   const itemsPerPageOptions = [20, 40, 60, 80];
@@ -26,9 +26,9 @@ const Solting = () => {
   };
 
   return (
-    <div className=" bg-[--white] shrink-0 lg:top-[106px]  w-full">
+    <div className="bg-[--white] shrink-0 lg:top-[106px] w-full overflow-x-auto horizontal-scroll">
       <div className="flex justify-between text-font-medium space-x-9 border border-[--serviceborder] border-l-0">
-        <div className="flex border border-[--serviceborder] border-y-0">
+        <div className="flex border border-[--serviceborder] border-y-0 ">
           <div className="relative border  border-[--serviceborder] border-y-0 border-l-0 flex justify-between gap-5 px-3 py-2">
             <div className="border border-[--serviceborder] flex gap-6 rounded-md p-2">
               <p>{selectedItems}</p>

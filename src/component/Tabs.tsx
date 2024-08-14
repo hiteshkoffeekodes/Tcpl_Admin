@@ -19,7 +19,7 @@ function Tabs({
   };
 
   return (
-    <ul className="flex whitespace-nowrap overflow-x-auto">
+    <ul className="flex whitespace-nowrap overflow-x-auto horizontal-scroll">
       {array.map((item: any, index: number) => (
         <li key={index}>
           <button
@@ -27,7 +27,7 @@ function Tabs({
             className={`cursor-pointer text-small font-semibold px-4 py-3 uppercase ${
               item.setvalue === aboutTab
                 ? "bg-[--poptishyam] text-[--white] rounded-t-md"
-                : "bg-[--]" 
+                : "bg-[--]"
             }`}
             onClick={() => handleTabClick(item.setvalue)}
           >

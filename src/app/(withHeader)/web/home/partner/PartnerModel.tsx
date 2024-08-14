@@ -71,8 +71,9 @@ function PartnerModel({ model, setModel, modeltitle, children }: any) {
 
                   <div className="flex items-center justify-center gap-10">
                     <button
-                      type="submit"
+                      type="button"
                       className="bg-[--poptishyam] text-[--white] font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline uppercase"
+                      onClick={() => setModel(!model)}
                     >
                       Cancel
                     </button>
