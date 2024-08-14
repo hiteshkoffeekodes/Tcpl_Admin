@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-weight: normal;
+  --white: #FFFFFF;
+  --black:#000000;
+  --lightgreen: #DAF1EB;
+  --darkblue: #032930;
+  --darkpopti: #3EA089;
+  --numberblue: #065363;
+  --ghatopopti: #91D4C4;
+  --poptishyam: #3EA089;
+  --lightlightblue: #EDF8F5;
+  --serviceborder: #B6E2D8;
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+font-family: "Saira", sans-serif;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  @apply h-[2px] w-[2px] bg-[--white];
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  @apply rounded-[1px] bg-[--poptishyam];
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  @apply rounded-[1px] bg-[--white];
+}
+
+.button {
+  @apply bg-[--poptishyam] px-3 py-[7px] md:py-2 text-[--white] uppercase font-medium rounded-[5px] transition-all ease-in duration-300;
+}
