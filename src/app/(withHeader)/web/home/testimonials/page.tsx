@@ -118,7 +118,7 @@ const TestimonialsTable = () => {
                 </th>
               </tr>
             </thead>
-            <tbody className="border-[--serviceborder] border border-l-0 overflow-auto ">
+            <tbody className="border-[--serviceborder] border border-l-0 overflow-auto">
               {tableData.map((item, index) => (
                 <tr
                   key={index}
@@ -132,11 +132,11 @@ const TestimonialsTable = () => {
                       className="w-[13px] h-[13px] rounded-[1px] "
                     />
                   </td>
-                  <td className="  text-center">{index + 1}</td>
-                  <td className="  text-start">{item.Name}</td>
-                  <td className="  text-start">{item.title}</td>
-                  <td className="  text-start pl-4">{item.description}</td>
-                  <td className={`   text-start `}>
+                  <td className="text-center">{index + 1}</td>
+                  <td className="text-start">{item.Name}</td>
+                  <td className="text-start">{item.title}</td>
+                  <td className="text-start pl-4">{item.description}</td>
+                  <td className={`text-start `}>
                     <div
                       className={`m-1 py-1 text-center rounded-md border ${
                         item.status === "Active"

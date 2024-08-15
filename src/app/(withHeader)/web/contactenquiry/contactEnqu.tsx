@@ -39,66 +39,6 @@ const initialTableData = [
     status: "Inactive",
     action: "/image/q11.svg",
   },
-  {
-    id: 5,
-    date: "01/07/2004",
-    time: "09:00 AM",
-    name: "Hitesh ",
-    emailId: "abc@gmail.com",
-    number: "9876543210",
-    subject: "AADHAR ENABLED",
-    message: "Your resource to discover and connect.",
-    status: "Inactive",
-    action: "/image/q11.svg",
-  },
-  {
-    id: 5,
-    date: "01/07/2004",
-    time: "09:00 AM",
-    name: "Hitesh ",
-    emailId: "abc@gmail.com",
-    number: "9876543210",
-    subject: "AADHAR ENABLED",
-    message: "Your resource to discover and connect.",
-    status: "Inactive",
-    action: "/image/q11.svg",
-  },
-  {
-    id: 5,
-    date: "01/07/2004",
-    time: "09:00 AM",
-    name: "Hitesh ",
-    emailId: "abc@gmail.com",
-    number: "9876543210",
-    subject: "AADHAR ENABLED",
-    message: "Your resource to discover and connect.",
-    status: "Inactive",
-    action: "/image/q11.svg",
-  },
-  {
-    id: 5,
-    date: "01/07/2004",
-    time: "09:00 AM",
-    name: "Hitesh ",
-    emailId: "abc@gmail.com",
-    number: "9876543210",
-    subject: "AADHAR ENABLED",
-    message: "Your resource to discover and connect.",
-    status: "Inactive",
-    action: "/image/q11.svg",
-  },
-  {
-    id: 5,
-    date: "01/07/2004",
-    time: "09:00 AM",
-    name: "Hitesh ",
-    emailId: "abc@gmail.com",
-    number: "9876543210",
-    subject: "AADHAR ENABLED",
-    message: "Your resource to discover and connect.",
-    status: "Inactive",
-    action: "/image/q11.svg",
-  },
 ];
 
 const ContactEnquieyTable = () => {
@@ -145,31 +85,31 @@ const ContactEnquieyTable = () => {
                     className="w-[13px] h-[13px] text-[--green] rounded-[1px]"
                   />
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[5%]">
+                <th className="p-3 whitespace-nowrap text-center w-[5%]">
                   Sr.No.
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                <th className="p-3 whitespace-nowrap text-center w-[8%]">
                   Date
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                <th className="p-3 whitespace-nowrap text-center w-[8%]">
                   Time
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                <th className="p-3 whitespace-nowrap text-center w-[8%]">
                   Name
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                <th className="p-3 whitespace-nowrap text-center w-[8%]">
                   Email ID
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                <th className="p-3 whitespace-nowrap text-center w-[8%]">
                   Number
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[13%]">
+                <th className="p-3 whitespace-nowrap text-center w-[13%]">
                   Subject
                 </th>
                 <th className="p-3 whitespace-nowrap overflow-auto text-center pl-4">
                   Message
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                <th className="p-3 whitespace-nowrap text-center w-[8%]">
                   Status
                 </th>
                 <th className=" border-x border-[--serviceborder] p-3 whitespace-nowrap  text-center w-[2%] pr-3 ">
