@@ -4,24 +4,6 @@ import Toggle from "@/component/toggle/page";
 
 const initialTableData = [
   {
-    id: 5,
-    Name: "Hitesh Chauhan",
-    title: "abc@gmail.com",
-    description: "01-07-2024",
-    status: "Inactive",
-    onOff: false,
-    action: "/image/q11.svg",
-  },
-  {
-    id: 0,
-    Name: "Hitesh Chauhan",
-    title: "abc@gmail.com",
-    description: "01-07-2024",
-    status: "Active",
-    onOff: true,
-    action: "/image/q11.svg",
-  },
-  {
     id: 1,
     Name: "Hitesh Chauhan",
     title: "abc@gmail.com",
@@ -31,7 +13,16 @@ const initialTableData = [
     action: "/image/q11.svg",
   },
   {
-    id: 5,
+    id: 2,
+    Name: "Hitesh Chauhan",
+    title: "abc@gmail.com",
+    description: "01-07-2024",
+    status: "Active",
+    onOff: true,
+    action: "/image/q11.svg",
+  },
+  {
+    id: 3,
     Name: "Hitesh Chauhan",
     title: "abc@gmail.com",
     description: "01-07-2024",
@@ -40,7 +31,16 @@ const initialTableData = [
     action: "/image/q11.svg",
   },
   {
-    id: 0,
+    id: 4,
+    Name: "Hitesh Chauhan",
+    title: "abc@gmail.com",
+    description: "01-07-2024",
+    status: "Inactive",
+    onOff: false,
+    action: "/image/q11.svg",
+  },
+  {
+    id: 5,
     Name: "Hitesh Chauhan",
     title: "abc@gmail.com",
     description: "01-07-2024",
@@ -59,12 +59,10 @@ const NewsLetterTable = () => {
   };
 
   const handleEdit = (index: any) => {
-    console.log("Edit clicked for index: ", index);
     setDropdownOpen(null);
   };
 
   const handleDelete = (index: any) => {
-    console.log("Delete clicked for index: ", index);
     setDropdownOpen(null);
   };
 

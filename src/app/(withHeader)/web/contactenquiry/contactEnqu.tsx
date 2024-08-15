@@ -1,58 +1,107 @@
 "use client";
-
 import React, { useState } from "react";
 import Toggle from "@/component/toggle/page";
-import aa from "../../../../../../public/image/youtube56 Hight.svg";
 
 const initialTableData = [
   {
     id: 5,
-    thumbnail: "/image/youhome.svg",
-    title: "Advertisement Videos",
-    description: "https://cdn1.vectorstock.com/i/",
+    date: "01/07/2004",
+    time: "09:00 AM",
+    name: "Hitesh ",
+    emailId: "abc@gmail.com",
+    number: "9876543210",
+    subject: "AADHAR ENABLED",
+    message: "Your resource to discover and connect.",
     status: "Inactive",
-    onOff: false,
-    action: "/image/q11.svg",
-  },
-  {
-    id: 0,
-    thumbnail: "/image/youhome.svg",
-    title: "Promotion Videos",
-    description: "https://cdn1.vectorstock.com/i/",
-    status: "Active",
-    onOff: true,
     action: "/image/q11.svg",
   },
   {
     id: 5,
-    thumbnail: "/image/youhome.svg",
-    title: "Advertisement Videos",
-    description: "https://cdn1.vectorstock.com/i/",
+    date: "01/07/2004",
+    time: "09:00 AM",
+    name: "Hitesh ",
+    emailId: "abc@gmail.com",
+    number: "9876543210",
+    subject: "AADHAR ENABLED",
+    message: "Your resource to discover and connect.",
     status: "Inactive",
-    onOff: false,
     action: "/image/q11.svg",
   },
   {
-    id: 0,
-    thumbnail: "/image/youhome.svg",
-    title: "Promotion Videos",
-    description: "https://cdn1.vectorstock.com/i/",
-    status: "Active",
-    onOff: true,
+    id: 5,
+    date: "01/07/2004",
+    time: "09:00 AM",
+    name: "Hitesh ",
+    emailId: "abc@gmail.com",
+    number: "9876543210",
+    subject: "AADHAR ENABLED",
+    message: "Your resource to discover and connect.",
+    status: "Inactive",
     action: "/image/q11.svg",
   },
-   {
+  {
     id: 5,
-    thumbnail: "/image/youhome.svg",
-    title: "Advertisement Videos",
-    description: "https://cdn1.vectorstock.com/i/",
+    date: "01/07/2004",
+    time: "09:00 AM",
+    name: "Hitesh ",
+    emailId: "abc@gmail.com",
+    number: "9876543210",
+    subject: "AADHAR ENABLED",
+    message: "Your resource to discover and connect.",
     status: "Inactive",
-    onOff: false,
     action: "/image/q11.svg",
-  }
+  },
+  {
+    id: 5,
+    date: "01/07/2004",
+    time: "09:00 AM",
+    name: "Hitesh ",
+    emailId: "abc@gmail.com",
+    number: "9876543210",
+    subject: "AADHAR ENABLED",
+    message: "Your resource to discover and connect.",
+    status: "Inactive",
+    action: "/image/q11.svg",
+  },
+  {
+    id: 5,
+    date: "01/07/2004",
+    time: "09:00 AM",
+    name: "Hitesh ",
+    emailId: "abc@gmail.com",
+    number: "9876543210",
+    subject: "AADHAR ENABLED",
+    message: "Your resource to discover and connect.",
+    status: "Inactive",
+    action: "/image/q11.svg",
+  },
+  {
+    id: 5,
+    date: "01/07/2004",
+    time: "09:00 AM",
+    name: "Hitesh ",
+    emailId: "abc@gmail.com",
+    number: "9876543210",
+    subject: "AADHAR ENABLED",
+    message: "Your resource to discover and connect.",
+    status: "Inactive",
+    action: "/image/q11.svg",
+  },
+  {
+    id: 5,
+    date: "01/07/2004",
+    time: "09:00 AM",
+    name: "Hitesh ",
+    emailId: "abc@gmail.com",
+    number: "9876543210",
+    subject: "AADHAR ENABLED",
+    message: "Your resource to discover and connect.",
+    status: "Inactive",
+    action: "/image/q11.svg",
+  },
 ];
 
-const YoutubeTable = () => {
+const ContactEnquieyTable = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [tableData, setTableData] = useState(initialTableData);
 
@@ -61,27 +110,25 @@ const YoutubeTable = () => {
   };
 
   const handleEdit = (index: any) => {
-    // Add your edit logic here
     setDropdownOpen(null);
   };
 
   const handleDelete = (index: any) => {
-    // Add your delete logic here
     setDropdownOpen(null);
   };
 
-  const handleToggle = (id: any) => {
-    const updatedTableData = tableData.map((item) =>
-      item.id === id
-        ? {
-            ...item,
-            onOff: !item.onOff,
-            status: item.onOff ? "Inactive" : "Active",
-          }
-        : item
-    );
-    setTableData(updatedTableData);
-  };
+  // const handleToggle = (id: any) => {
+  //   const updatedTableData = tableData.map((item) =>
+  //     item.id === id
+  //       ? {
+  //           ...item,
+  //           onOff: !item.onOff,
+  //           status: item.onOff ? "Active" : "Inactive",
+  //         }
+  //       : item
+  //   );
+  //   setTableData(updatedTableData);
+  // };
 
   return (
     <div className="w-full h-full">
@@ -101,20 +148,29 @@ const YoutubeTable = () => {
                 <th className="p-3 whitespace-nowrap  text-center w-[5%]">
                   Sr.No.
                 </th>
-                <th className="p-3 whitespace-nowrap  text-start w-[12%]">
-                  Thumbnail Image
+                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                  Date
                 </th>
-                <th className="p-3 whitespace-nowrap  text-start w-[13%]">
-                  Title
+                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                  Time
                 </th>
-                <th className="p-3 whitespace-nowrap overflow-auto text-start pl-4 w-[56%]">
-                  YouTube Link
+                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                  Name
                 </th>
-                <th className="p-3 whitespace-nowrap  text-center w-[7%]">
+                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                  Email ID
+                </th>
+                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
+                  Number
+                </th>
+                <th className="p-3 whitespace-nowrap  text-center w-[13%]">
+                  Subject
+                </th>
+                <th className="p-3 whitespace-nowrap overflow-auto text-center pl-4">
+                  Message
+                </th>
+                <th className="p-3 whitespace-nowrap  text-center w-[8%]">
                   Status
-                </th>
-                <th className="p-3 whitespace-nowrap  text-start w-[5%]">
-                  On / Off
                 </th>
                 <th className=" border-x border-[--serviceborder] p-3 whitespace-nowrap  text-center w-[2%] pr-3 ">
                   Action
@@ -135,16 +191,14 @@ const YoutubeTable = () => {
                       className="w-[13px] h-[13px] rounded-[1px] "
                     />
                   </td>
-                  <td className="  text-center">{index + 1}</td>
-                  <td className="  text-start">
-                    <img
-                      src={item.thumbnail}
-                      alt={`Thumbnail ${item.id}`}
-                      className="w-16 h-10 object-cover"
-                    />
-                  </td>
-                  <td className="  text-start">{item.title}</td>
-                  <td className="  text-start pl-4">{item.description}</td>
+                  <td className=" px-2 text-center">{index + 1}</td>
+                  <td className=" px-2 text-center">{item.date}</td>
+                  <td className=" px-2 text-center">{item.time}</td>
+                  <td className=" px-2 text-center">{item.name}</td>
+                  <td className=" px-2 text-center">{item.emailId}</td>
+                  <td className=" px-2 text-center">{item.number}</td>
+                  <td className=" px-2 text-center">{item.subject}</td>
+                  <td className=" px-2 text-center">{item.message}</td>
                   <td className={`   text-start `}>
                     <div
                       className={`m-1 py-1 text-center rounded-md border ${
@@ -156,12 +210,12 @@ const YoutubeTable = () => {
                       {item.status}
                     </div>
                   </td>
-                  <td className="  text-start">
+                  {/* <td className="  text-start">
                     <Toggle
                       onOff={item.onOff}
                       onToggle={() => handleToggle(item.id)}
                     />
-                  </td>
+                  </td> */}
                   <td className=" border-l border-[--serviceborder] text-center relative">
                     <button
                       onClick={() => handleActionClick(index)}
@@ -200,4 +254,4 @@ const YoutubeTable = () => {
   );
 };
 
-export default YoutubeTable;
+export default ContactEnquieyTable;

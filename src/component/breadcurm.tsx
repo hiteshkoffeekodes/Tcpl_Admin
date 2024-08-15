@@ -51,7 +51,7 @@ function Breadcurm({
                   </button>
                 </li>
               )}
-              {prebtn && (
+              {previewbtn && (
                 <li>
                   <button type="button" className="button">
                     {previewbtn}

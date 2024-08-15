@@ -39,3 +39,14 @@ font-family: "Saira", sans-serif;
 .button {
   @apply bg-[--poptishyam] px-3 py-[7px] md:py-2 text-[--white] uppercase font-medium rounded-[5px] transition-all ease-in duration-300;
 }
+
+
+.custom-md-block {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .custom-md-block {
+    display: block;
+  }
+}

@@ -19,7 +19,7 @@ function Tabs({
   };
 
   return (
-    <ul className="flex whitespace-nowrap overflow-x-auto horizontal-scroll">
+    <ul className="flex whitespace-nowrap overflow-x-auto horizontal-scroll border-b border-[--serviceborder]">
       {array.map((item: any, index: number) => (
         <li key={index}>
           <button

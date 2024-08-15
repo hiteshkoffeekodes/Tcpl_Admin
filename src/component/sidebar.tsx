@@ -135,10 +135,10 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }: any) => {
                 <div className="lg:pl-14 px-4 space-y-2">
                   {[
                     { label: "Home Page", path: "/web/home" },
-                    { label: "About Us", path: "/web/aboutus" },
+                    { label: "About Us", path: "/web/aboutUs" },
                     { label: "Services", path: "/web/services" },
                     { label: "Random Stuff", path: "/web/randomstuff" },
-                    { label: "Contact Enquiry", path: "/web/contactinquiry" },
+                    { label: "Contact Enquiry", path: "/web/contactenquiry" },
                   ].map((subItem) => (
                     <p
                       key={subItem.label}

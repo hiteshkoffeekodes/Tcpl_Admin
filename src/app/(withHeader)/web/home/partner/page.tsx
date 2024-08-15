@@ -47,7 +47,7 @@ const initialTableData = [
     status: "Inactive",
     onOff: false,
     action: "/image/q11.svg",
-  }
+  },
 ];
 
 const PartnerTable = () => {
@@ -59,12 +59,10 @@ const PartnerTable = () => {
   };
 
   const handleEdit = (index: any) => {
-    console.log("Edit clicked for index: ", index);    
     setDropdownOpen(null);
   };
 
   const handleDelete = (index: any) => {
-    console.log("Delete clicked for index: ", index);
     setDropdownOpen(null);
   };
 
