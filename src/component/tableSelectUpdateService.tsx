@@ -34,9 +34,9 @@ function TableSelectUpdateService() {
         borderRadius: 0,
         colors: {
           ...theme.colors,
-          primary: "#cfa767",
-          primary25: "#cfa767",
-          primary50: "#cfa767",
+          primary: "#B6E2D8",
+          primary25: "#B6E2D8",
+          primary50: "#B6E2D8",
         },
       })}
     />

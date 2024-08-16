@@ -34,7 +34,7 @@ const ServiceProviderSlabTableFrom = () => {
       <div className="h-[calc(100%-65px)] overflow-auto  whitespace-nowrap">
         <table className="min-w-full">
           <thead>
-            <tr className="bg-[#F9F4EC] border border-t-0  border-[--serviceborder]    sticky shrink-0 top-[0px] z-[1]">
+            <tr className="bg-[#F9F4EC] border border-t-0  border-[--serviceborder] sticky shrink-0 top-[0px] z-[1]">
               <th className=" border border-r  py-2  border-[--serviceborder] text-start w-[18%] pl-10">
                 Minimum
               </th>

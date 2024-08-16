@@ -28,12 +28,12 @@ const ServiceProviderModel = () => {
       <Breadcurm
         title="Add Service providers"
         mainlink="Masters / Add Service providers"
-        updatebtn="+ add"
-        backbtn="<-"
+        cancelbtn="cancel "
+        submitbtn="submit"
         backurl="/master/serviceprovider"
       />
 
-      <div className="w-[80%] h-full p-3 ">
+      <div className="w-full h-full p-3 text-medium">
         <div className="pt-4 flex gap-10">
           <div className="w-[23%] space-y-3">
             <p>Service Name</p>
@@ -43,7 +43,7 @@ const ServiceProviderModel = () => {
             <p>Service Provider Name</p>
             <input
               id="Name"
-              className="border-[1px] border-[#CFA767] w-full py-2 px-4 pr-20 mt-2 "
+              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4 pr-20 mt-2 "
               type="text"
               placeholder="Enter Your Text Here"
             />
@@ -52,7 +52,31 @@ const ServiceProviderModel = () => {
             <p>Label</p>
             <input
               id="Name"
-              className="border-[1px] border-[#CFA767] w-full py-2 px-4 pr-20 mt-2 "
+              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4 pr-20 mt-2 "
+              type="text"
+              placeholder="Enter Your Text Here"
+            />
+          </div>
+          <div className="w-[23%] space-y-3">
+            <p>Hsn/Sac</p>
+            <TableSelect />
+          </div>
+        </div>
+
+        <div className="pt-4 flex gap-10">
+          <div className="w-[23%] space-y-3">
+            <p>Charges Type</p>
+            <TableSelectUpdateService />
+          </div>
+          <div className="w-[23%] space-y-3">
+            <p>Charges Rate Type</p>
+            <TableSelectUpdateService />
+          </div>
+          <div className="w-[23%] space-y-3">
+            <p>Charge Rate</p>
+            <input
+              id="Name"
+              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4 pr-20 mt-2 "
               type="text"
               placeholder="Enter Your Text Here"
             />
@@ -65,26 +89,14 @@ const ServiceProviderModel = () => {
             <TableSelectUpdateService />
           </div>
           <div className="w-[23%] space-y-3">
-            <p>Charges From</p>
-            <input
-              id="Name"
-              className="border-[1px] border-[#CFA767] w-full py-2 px-4 pr-20 mt-2 "
-              type="text"
-              placeholder="Enter Your Text Here"
-            />
-          </div>
-        </div>
-
-        <div className="pt-4 flex gap-10">
-          <div className="w-[23%] space-y-3">
-            <p>Charges Type</p>
-            <TableSelect />
+            <p>Charges Rate Type</p>
+            <TableSelectUpdateService />
           </div>
           <div className="w-[23%] space-y-3">
-            <p>Charges To</p>
+            <p>Charge Rate</p>
             <input
               id="Name"
-              className="border-[1px] border-[#CFA767] w-full py-2 px-4 pr-20 mt-2 "
+              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4 pr-20 mt-2 "
               type="text"
               placeholder="Enter Your Text Here"
             />

@@ -11,7 +11,7 @@ export const customStyle = {
     { isDisabled, isFocused }: { isDisabled: boolean; isFocused: boolean }
   ) => ({
     ...styles,
-    borderColor: "#CFA767 !important",
+    borderColor: "#B6E2D8 !important",
     minHeight: "39px !important",
     height: "39px !important",
     alignItems: "start !important",
@@ -20,11 +20,11 @@ export const customStyle = {
     borderRadius: "5px!important",
 
     "&:hover": {
-      borderColor: "#CFA767 !important",
+      borderColor: "#B6E2D8 !important",
     },
 
     ...(isDisabled && {
-      backgroundColor: "#CFA767 !important",
+      backgroundColor: "#B6E2D8 !important",
       fontWeight: "300",
     }),
 
@@ -39,7 +39,7 @@ export const customStyle = {
   }),
   dropdownIndicator: (provided: any) => ({
     ...provided,
-    color: "#cfa767",
+    color: "#065363",
   }),
   menu: (provided: any) => ({
     ...provided,
@@ -56,7 +56,7 @@ export const customStyle = {
   indicatorSeparator: (provided: any) => ({
     ...provided,
     width: "0px",
-    backgroundColor: "#cfa767",
+    backgroundColor: "#B6E2D8",
   }),
   indicatorsContainer: (provided: any) => ({
     ...provided,

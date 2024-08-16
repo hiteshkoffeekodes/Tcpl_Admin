@@ -123,8 +123,8 @@ const ServiceProviderTable = () => {
         <Breadcurm
           title="Service providers"
           mainlink="Masters / service providers "
-          addbtn={aboutTab !== "youtube" && "add providers"}
-          url="/master/serviceprovider/create_service_providers"
+          urlbtn="add providers"
+          url="/master/serviceprovider/AddServiceProvider"
           handleTabClick={handleTabClick}
         />
         <Solting />

@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 function SlabModel({ model, setModel, modeltitle, children }: any) {
@@ -12,9 +11,9 @@ function SlabModel({ model, setModel, modeltitle, children }: any) {
   return (
     <>
       {model && (
-        <div className=" overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[2] justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full flex bg-black/50  transition-opacity duration-700 ">
+        <div className=" overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[2] justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full flex bg-black/50  transition-opacity duration-700">
           <div className="relative p-4 w-full max-w-[380px] max-h-full">
-            <div className="relative bg-[--bg-white] rounded-md shadow ">
+            <div className="relative bg-[--white] rounded-md shadow ">
               <div className="flex items-center justify-between p-4 border-b rounded-t bg-[--serviceborder]  ">
                 <h3 className="text-medium font-semibold text-[--darkblue] uppercase">
                   {modeltitle}
@@ -28,7 +27,7 @@ function SlabModel({ model, setModel, modeltitle, children }: any) {
                   <IoMdClose />
                 </button>
               </div>
-              <div className="bg-white">
+              <div className="bg-[--white]">
                 <form className="p-4">
                   <div className="mb-4">
                     <label
@@ -64,7 +63,7 @@ function SlabModel({ model, setModel, modeltitle, children }: any) {
                         id="default-checkbox"
                         type="checkbox"
                         value=""
-                        className="w-[17px] h-[17px] text-[--darkblue] border border-[--serviceborder]     rounded-[1px]"
+                        className="w-[17px] h-[17px] text-[--darkblue] border border-[--serviceborder] rounded-[1px]"
                       />
                     </th>
                     If this
