@@ -49,7 +49,7 @@ const Solting = () => {
                   <button
                     key={option}
                     onClick={() => handleItemsPerPageSelect(option)}
-                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-gray-100 w-full"
+                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full"
                   >
                     {option}
                   </button>
@@ -77,7 +77,7 @@ const Solting = () => {
                   <button
                     key={option}
                     onClick={() => console.log(`${option} clicked`)}
-                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-gray-100 w-full text-left"
+                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full text-left"
                   >
                     {option}
                   </button>
@@ -107,7 +107,7 @@ const Solting = () => {
                   <button
                     key={option}
                     onClick={() => handleItemsPerPageSelect(option)}
-                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-gray-100 w-full"
+                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full"
                   >
                     {option}
                   </button>
@@ -135,7 +135,7 @@ const Solting = () => {
                   <button
                     key={option}
                     onClick={() => console.log(`${option} clicked`)}
-                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-gray-100 w-full text-left"
+                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full text-left"
                   >
                     {option}
                   </button>

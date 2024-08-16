@@ -63,7 +63,7 @@ const ContactEnquieyTable = () => {
         <div className="overflow-auto horizontal-scroll  whitespace-nowrap relative h-[calc(100%-44px)] w-full">
           <table>
             <thead>
-              <tr className="border-b border-[--serviceborder] sticky shrink-0 top-0 z-[2] bg-[--white]">
+              <tr className="border-b border-[--serviceborder] sticky shrink-0 top-0 z-[2] bg-[--white] text-small font-semibold">
                 <th className="pl-3">
                   <input
                     id="default-checkbox"
@@ -104,7 +104,7 @@ const ContactEnquieyTable = () => {
                 </th>
               </tr>
             </thead>
-            <tbody className="border-[--serviceborder] border border-l-0 overflow-auto ">
+            <tbody className="border-[--serviceborder] border border-l-0 overflow-auto text-small font-medium">
               {tableData.map((item, index) => (
                 <tr
                   key={index}

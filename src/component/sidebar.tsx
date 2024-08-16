@@ -46,7 +46,7 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }: any) => {
   return (
     <>
       <div
-        className={`relative z-[40] overflow-y-auto pt-1 bg-white pl-4${
+        className={`relative z-[40] overflow-y-auto pt-1 bg-[--white] pl-4${
           isSidebar ? " w-[240px]" : "w-[100px]"
         } h-full`}
       >

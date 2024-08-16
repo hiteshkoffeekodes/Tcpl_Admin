@@ -72,7 +72,7 @@ const Login = () => {
                       id="default-checkbox"
                       type="checkbox"
                       value=""
-                      className="w-[15px] h-[15px] text-[--green] border-[--serviceborder] border p-2 rounded-[1px]"
+                      className="w-[15px] h-[15px] text-[--darkblue] border-[--serviceborder] border p-2 rounded-[1px]"
                     />
                     <h1>Remember me</h1>
                   </li>

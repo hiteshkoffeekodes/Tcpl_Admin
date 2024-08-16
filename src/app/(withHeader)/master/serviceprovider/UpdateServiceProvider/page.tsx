@@ -1,7 +1,6 @@
 "use client";
 import Maincontent from "@/app/maincontext";
-
-import Breadcurm from "@/component/breadCum/page";
+import Breadcurm from "@/component/breadcurm";
 import TableSelect from "@/component/TableSelect";
 import TableSelectUpdateService from "@/component/tableSelectUpdateService";
 import { useRouter } from "next/navigation";

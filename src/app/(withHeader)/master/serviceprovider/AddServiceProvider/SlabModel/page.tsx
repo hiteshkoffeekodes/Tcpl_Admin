@@ -64,7 +64,7 @@ function SlabModel({ model, setModel, modeltitle, children }: any) {
                         id="default-checkbox"
                         type="checkbox"
                         value=""
-                        className="w-[17px] h-[17px] text-[--green] border-[--border]     rounded-[1px]"
+                        className="w-[17px] h-[17px] text-[--darkblue] border border-[--serviceborder]     rounded-[1px]"
                       />
                     </th>
                     If this

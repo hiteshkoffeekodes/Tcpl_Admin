@@ -1,6 +1,5 @@
 "use client";
 import Maincontent from "@/app/maincontext";
-import Breadcurm from "@/component/breadCum/page";
 import TableSelect from "@/component/TableSelect";
 
 import React, { useState } from "react";
@@ -8,6 +7,7 @@ import ServiceProviderSlabTable from "./AddServiceProviderTableSlabFrom/page";
 import ServiceProviderSlabTableFrom from "./AddServiceProviderTableSlabFrom/page";
 import ServiceProviderSlabTableTo from "./AddServiceProviderTableSlabTo/page";
 import SlabModel from "./SlabModel/page";
+import Breadcurm from "@/component/breadcurm";
 
 const AddServiceProviderModel = () => {
   const chargeOptions = ["Fixed", "Percentage", "Slabwise"];

@@ -14,12 +14,10 @@ function YoutubeModel({ model, setModel, modeltitle, children }: any) {
           <div className="relative p-4 w-full max-w-[380px] max-h-full">
             <div className="relative bg-[--white] rounded-md shadow ">
               <div className="flex items-center bg-[--serviceborder] justify-between p-4 border-b border-[--serviceborder] rounded-t">
-                <h3 className="text-medium font-semibold uppercase">
-                  {modeltitle}
-                </h3>
+                <h3 className="font-semibold uppercase">{modeltitle}</h3>
                 <button
                   type="button"
-                  className="rounded-full text-smallall w-6 h-6 ms-auto inline-flex justify-center items-center dark:hover:bg-[--darkblue] dark:hover:text-[--white]"
+                  className=" bg-[--poptishyam] text-[--white] rounded-full text-smallall w-6 h-6 ms-auto inline-flex justify-center items-center dark:hover:bg-[--numberblue] dark:hover:text-[--white]"
                   data-modal-hide="default-modal"
                   onClick={() => setModel(!model)}
                 >
@@ -38,7 +36,7 @@ function YoutubeModel({ model, setModel, modeltitle, children }: any) {
                     <input
                       id="title"
                       type="text"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+                      className=" appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
@@ -52,7 +50,7 @@ function YoutubeModel({ model, setModel, modeltitle, children }: any) {
                     <input
                       id="image"
                       type="file"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+                      className=" appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
@@ -66,7 +64,7 @@ function YoutubeModel({ model, setModel, modeltitle, children }: any) {
                     <input
                       id="mobileImage"
                       type="file"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+                      className=" appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
@@ -79,7 +77,7 @@ function YoutubeModel({ model, setModel, modeltitle, children }: any) {
                     </label>
                     <textarea
                       id="description"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+                      className=" appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 

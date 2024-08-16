@@ -85,7 +85,7 @@ const Layout = ({ children }: { children: any }) => {
           {isSidebarOpen && (
             <div className="h-full absolute top-0 bottom-0 left-0 z-[3] block lg:hidden bg-[--white]">
               <div className=" overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[3] justify-start items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full flex bg-black/50 transition-opacity duration-700 lg:hidden">
-                <div className="fixed top-0  bottom-0 left-0  z-20  lg:hidden bg-[--background] max-w-[185px] w-full border border-[--border] border-t-0 border-s-0 border-b-0  lg:border-e-0">
+                <div className="fixed top-0  bottom-0 left-0  z-20  lg:hidden bg-[--background] max-w-[185px] w-full border border border-[--serviceborder] border-t-0 border-s-0 border-b-0  lg:border-e-0">
                   <Sidebar
                     isSidebarOpen={isSidebarOpen}
                     setIsSidebarOpen={setIsSidebarOpen}

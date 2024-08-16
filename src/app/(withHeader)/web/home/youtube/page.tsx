@@ -89,13 +89,13 @@ const YoutubeTable = () => {
         <div className="overflow-auto horizontal-scroll  whitespace-nowrap relative h-[calc(100%-44px)] w-full">
           <table>
             <thead>
-              <tr className="border-b border-[--serviceborder] sticky shrink-0 top-0 z-[2] bg-[--white]">
+              <tr className="border-b border-[--serviceborder] sticky shrink-0 top-0 z-[2] bg-[--white] text-small font-semibold">
                 <th className="pl-3">
                   <input
                     id="default-checkbox"
                     type="checkbox"
                     value=""
-                    className="w-[13px] h-[13px] text-[--green] rounded-[1px]"
+                    className="w-[13px] h-[13px] text-[--darkblue] rounded-[1px]"
                   />
                 </th>
                 <th className="p-3 whitespace-nowrap  text-center w-[5%]">
@@ -121,7 +121,7 @@ const YoutubeTable = () => {
                 </th>
               </tr>
             </thead>
-            <tbody className="border-[--serviceborder] border border-l-0 overflow-auto ">
+            <tbody className="border-[--serviceborder] border border-l-0 overflow-auto text-small font-medium">
               {tableData.map((item, index) => (
                 <tr
                   key={index}

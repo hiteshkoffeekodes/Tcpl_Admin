@@ -174,7 +174,7 @@ const Hsn = () => {
         <Breadcurm
           title="HSN/SAC"
           mainlink="Masters / HSN/SAC "
-          addbtn={aboutTab !== "youtube" && "+ add"}
+          addbtn={aboutTab !== "youtube" && "add hsn/sac"}
           handleTabClick={handleTabClick}
         />
         <Solting />
@@ -188,7 +188,7 @@ const Hsn = () => {
           <div className="h-[calc(100%-169px)] overflow-auto  whitespace-nowrap">
             <table className="min-w-full ">
               <thead>
-                <tr className="bg-[--white] border border-[--serviceborder] sticky shrink-0 top-[0px] z-[1] border-t-0">
+                <tr className="bg-[--white] border border-[--serviceborder] sticky shrink-0 top-[0px] z-[1] border-t-0 text-small font-semibold">
                   <th>
                     <input
                       id="default-checkbox"
@@ -215,7 +215,7 @@ const Hsn = () => {
                   </th>
                 </tr>
               </thead>
-              <tbody className="border-[--serviceborder] border">
+              <tbody className="border-[--serviceborder] border text-small font-medium">
                 {tableData.map((item, index) => (
                   <tr key={index} className="hover:bg-[lightlightblue]">
                     <td className=" border-b border-[--serviceborder] text-center">

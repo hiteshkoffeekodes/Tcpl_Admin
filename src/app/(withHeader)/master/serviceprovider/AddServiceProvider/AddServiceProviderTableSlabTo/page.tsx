@@ -34,34 +34,34 @@ const ServiceProviderSlabTableTo = () => {
       <div className="h-[calc(100%-65px)] overflow-auto  whitespace-nowrap">
         <table className="min-w-full">
           <thead>
-            <tr className="bg-[#F9F4EC] border border-t-0  border-[#F1E5D1]    sticky shrink-0 top-[0px] z-[1]">
-              <th className=" border border-r  py-2  border-[#F1E5D1] text-start w-[18%] pl-10">
+            <tr className="bg-[#F9F4EC] border border-t-0  border-[--serviceborder]    sticky shrink-0 top-[0px] z-[1]">
+              <th className=" border border-r  py-2  border-[--serviceborder] text-start w-[18%] pl-10">
                 Minimum
               </th>
-              <th className=" border border-r py-2  border-[#F1E5D1] text-start w-[18%] pl-10">
+              <th className=" border border-r py-2  border-[--serviceborder] text-start w-[18%] pl-10">
                 Maximum
               </th>
-              <th className=" border border-r py-2  border-[#F1E5D1] text-start w-[18%] pl-10">
+              <th className=" border border-r py-2  border-[--serviceborder] text-start w-[18%] pl-10">
                 if this
               </th>
-              <th className=" border border-r py-2  border-[#F1E5D1] text-start w-[18%] pl-10">
+              <th className=" border border-r py-2  border-[--serviceborder] text-start w-[18%] pl-10">
                 charges to
               </th>
             </tr>
           </thead>
-          <tbody className="border-[#F1E5D1] border">
+          <tbody className="border-[--serviceborder] border">
             {tableData.map((item, index) => (
-              <tr key={index} className="hover:bg-[#f1e7d5]">
-                <td className=" border-b  border-r border-[#F1E5D1] text-start pl-10">
+              <tr key={index} className="hover:bg-[lightlightblue]">
+                <td className=" border-b  border-r border-[--serviceborder] text-start pl-10">
                   {item.minimumnumber}
                 </td>
-                <td className=" border-b  border-r border-[#F1E5D1] text-start pl-10">
+                <td className=" border-b  border-r border-[--serviceborder] text-start pl-10">
                   {item.maximumnumber}
                 </td>
-                <td className=" border-b  border-r border-[#F1E5D1] text-start pl-10">
+                <td className=" border-b  border-r border-[--serviceborder] text-start pl-10">
                   {item.ifthis}
                 </td>
-                <td className=" border-b  border-r border-[#F1E5D1] text-start pl-10">
+                <td className=" border-b  border-r border-[--serviceborder] text-start pl-10">
                   {item.chargesto}
                 </td>
               </tr>
