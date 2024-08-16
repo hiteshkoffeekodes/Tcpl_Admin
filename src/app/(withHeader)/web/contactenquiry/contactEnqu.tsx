@@ -57,32 +57,19 @@ const ContactEnquieyTable = () => {
     setDropdownOpen(null);
   };
 
-  // const handleToggle = (id: any) => {
-  //   const updatedTableData = tableData.map((item) =>
-  //     item.id === id
-  //       ? {
-  //           ...item,
-  //           onOff: !item.onOff,
-  //           status: item.onOff ? "Active" : "Inactive",
-  //         }
-  //       : item
-  //   );
-  //   setTableData(updatedTableData);
-  // };
-
   return (
     <div className="w-full h-full">
       <div className="relative h-[calc(100%-171px)] w-full">
         <div className="overflow-auto horizontal-scroll  whitespace-nowrap relative h-[calc(100%-44px)] w-full">
           <table>
             <thead>
-              <tr className="border-b border-[--serviceborder] sticky shrink-0 top-0 z-[2] bg-white">
+              <tr className="border-b border-[--serviceborder] sticky shrink-0 top-0 z-[2] bg-[--white]">
                 <th className="pl-3">
                   <input
                     id="default-checkbox"
                     type="checkbox"
                     value=""
-                    className="w-[13px] h-[13px] text-[--green] rounded-[1px]"
+                    className="w-[13px] h-[13px] text-[--darkblue] rounded-[1px]"
                   />
                 </th>
                 <th className="p-3 whitespace-nowrap text-center w-[5%]">
@@ -150,12 +137,7 @@ const ContactEnquieyTable = () => {
                       {item.status}
                     </div>
                   </td>
-                  {/* <td className="  text-start">
-                    <Toggle
-                      onOff={item.onOff}
-                      onToggle={() => handleToggle(item.id)}
-                    />
-                  </td> */}
+
                   <td className=" border-l border-[--serviceborder] text-center relative">
                     <button
                       onClick={() => handleActionClick(index)}
@@ -171,13 +153,13 @@ const ContactEnquieyTable = () => {
                       <div className="absolute right-0 mt-2 w-32 bg-[--lightgreen] border rounded z-[1] shadow-lg  top-[37px]">
                         <button
                           onClick={() => handleEdit(index)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                          className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full text-left"
                         >
                           Edit
                         </button>
                         <button
                           onClick={() => handleDelete(index)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                          className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full text-left"
                         >
                           Delete
                         </button>

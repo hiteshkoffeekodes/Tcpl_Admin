@@ -41,7 +41,7 @@ const initialTableData = [
     onOff: true,
     action: "/image/q11.svg",
   },
-   {
+  {
     id: 5,
     thumbnail: "/image/youhome.svg",
     title: "Advertisement Videos",
@@ -49,7 +49,7 @@ const initialTableData = [
     status: "Inactive",
     onOff: false,
     action: "/image/q11.svg",
-  }
+  },
 ];
 
 const YoutubeTable = () => {
@@ -89,7 +89,7 @@ const YoutubeTable = () => {
         <div className="overflow-auto horizontal-scroll  whitespace-nowrap relative h-[calc(100%-44px)] w-full">
           <table>
             <thead>
-              <tr className="border-b border-[--serviceborder] sticky shrink-0 top-0 z-[2] bg-white">
+              <tr className="border-b border-[--serviceborder] sticky shrink-0 top-0 z-[2] bg-[--white]">
                 <th className="pl-3">
                   <input
                     id="default-checkbox"
@@ -177,13 +177,13 @@ const YoutubeTable = () => {
                       <div className="absolute right-0 mt-2 w-32 bg-[--lightgreen] border rounded z-[1] shadow-lg  top-[37px]">
                         <button
                           onClick={() => handleEdit(index)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                          className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full text-left"
                         >
                           Edit
                         </button>
                         <button
                           onClick={() => handleDelete(index)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                          className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full text-left"
                         >
                           Delete
                         </button>

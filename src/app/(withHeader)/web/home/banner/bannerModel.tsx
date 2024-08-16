@@ -18,7 +18,7 @@ function BannerModel({ model, setModel, modeltitle, children }: any) {
                 <h3 className="font-semibold uppercase">{modeltitle}</h3>
                 <button
                   type="button"
-                  className="rounded-full text-smallall w-6 h-6 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-[--white]"
+                  className=" bg-[--poptishyam] text-[--white] rounded-full text-smallall w-6 h-6 ms-auto inline-flex justify-center items-center dark:hover:bg-[--numberblue] dark:hover:text-[--white]"
                   data-modal-hide="default-modal"
                   onClick={() => setModel(!model)}
                 >
@@ -29,7 +29,7 @@ function BannerModel({ model, setModel, modeltitle, children }: any) {
                 <form className="p-4">
                   <div className="mb-4">
                     <label
-                      className="block text-gray-700 text-smallall font-bold mb-2"
+                      className="block text-[--darkblue] text-smallall font-bold mb-2"
                       htmlFor="title"
                     >
                       Add Title
@@ -37,13 +37,13 @@ function BannerModel({ model, setModel, modeltitle, children }: any) {
                     <input
                       id="title"
                       type="text"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
                   <div className="mb-4">
                     <label
-                      className="block text-gray-700 text-small font-bold mb-2"
+                      className="block text-[--darkblue] text-smallall font-bold mb-2"
                       htmlFor="image"
                     >
                       Upload Image
@@ -51,13 +51,13 @@ function BannerModel({ model, setModel, modeltitle, children }: any) {
                     <input
                       id="image"
                       type="file"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
                   <div className="mb-4">
                     <label
-                      className="block text-gray-700 text-small font-bold mb-2"
+                      className="block text-[--darkblue] text-smallall font-bold mb-2"
                       htmlFor="mobileImage"
                     >
                       Upload Image for Mobile
@@ -65,20 +65,20 @@ function BannerModel({ model, setModel, modeltitle, children }: any) {
                     <input
                       id="mobileImage"
                       type="file"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
                   <div className="mb-4">
                     <label
-                      className="block text-gray-700 text-small font-bold mb-2"
+                      className="block text-[--darkblue] text-smallall font-bold mb-2"
                       htmlFor="description"
                     >
                       Description
                     </label>
                     <textarea
                       id="description"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
@@ -93,7 +93,7 @@ function BannerModel({ model, setModel, modeltitle, children }: any) {
                     <button
                       type="button"
                       onClick={handleAddButtonClick}
-                      className="bg-[--poptishyam] text-white font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline uppercase"
+                      className="bg-[--poptishyam] text-[--white] font-bold py-2 px-10 rounded focus:outline-none focus:shadow-outline uppercase"
                     >
                       Submit
                     </button>

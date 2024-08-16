@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-function TestimonialModel({ model, setModel, modeltitle, children }: any) {
+function HsnModel({ model, setModel, modeltitle, children }: any) {
   const [isModelOpen, setIsModelOpen] = useState(false);
 
   const handleAddButtonClick = () => {
@@ -15,12 +15,12 @@ function TestimonialModel({ model, setModel, modeltitle, children }: any) {
           <div className="relative p-4 w-full max-w-[380px] max-h-full">
             <div className="relative bg-[--white] rounded-md shadow ">
               <div className="flex items-center bg-[--serviceborder] justify-between p-4 border-b border-[--serviceborder] rounded-t">
-                <h3 className="text-medium font-semibold uppercase">
+                <h3 className="text-medium font-semibold text-[--darkblue] uppercase">
                   {modeltitle}
                 </h3>
                 <button
                   type="button"
-                  className="rounded-full text-smallall w-6 h-6 ms-auto inline-flex justify-center items-center dark:hover:bg-[--darkblue] dark:hover:text-[--white]"
+                  className=" bg-[--poptishyam] text-[--white] rounded-full text-smallall w-6 h-6 ms-auto inline-flex justify-center items-center dark:hover:bg-[--numberblue] dark:hover:text-[--white]"
                   data-modal-hide="default-modal"
                   onClick={() => setModel(!model)}
                 >
@@ -34,7 +34,7 @@ function TestimonialModel({ model, setModel, modeltitle, children }: any) {
                       className="block text-[--darkblue] text-smallall font-bold mb-2"
                       htmlFor="title"
                     >
-                      Name
+                      HSN/SAC Code
                     </label>
                     <input
                       id="title"
@@ -42,13 +42,12 @@ function TestimonialModel({ model, setModel, modeltitle, children }: any) {
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
-
                   <div className="mb-4">
                     <label
                       className="block text-[--darkblue] text-smallall font-bold mb-2"
-                      htmlFor="image"
+                      htmlFor="title"
                     >
-                      Add Title
+                      Tax Rate (%)
                     </label>
                     <input
                       id="title"
@@ -56,7 +55,6 @@ function TestimonialModel({ model, setModel, modeltitle, children }: any) {
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
-
                   <div className="mb-4">
                     <label
                       className="block text-[--darkblue] text-smallall font-bold mb-2"
@@ -69,7 +67,6 @@ function TestimonialModel({ model, setModel, modeltitle, children }: any) {
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
-
                   <div className="flex items-center justify-center gap-10">
                     <button
                       type="button"
@@ -96,4 +93,4 @@ function TestimonialModel({ model, setModel, modeltitle, children }: any) {
   );
 }
 
-export default TestimonialModel;
+export default HsnModel;

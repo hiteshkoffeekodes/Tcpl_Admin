@@ -6,7 +6,7 @@ import Search from "../../../public/image/seann.svg";
 
 const Solting = () => {
   const [itemsPerPageDropdownOpen, setItemsPerPageDropdownOpen] =
-  useState(false);
+    useState(false);
   const [selectDropdownOpen, setSelectDropdownOpen] = useState(false);
   const [selectedItems, setSelectedItems] = useState(10);
   const itemsPerPageOptions = [20, 40, 60, 80];
@@ -49,7 +49,7 @@ const Solting = () => {
                   <button
                     key={option}
                     onClick={() => handleItemsPerPageSelect(option)}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full"
+                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-gray-100 w-full"
                   >
                     {option}
                   </button>
@@ -77,7 +77,7 @@ const Solting = () => {
                   <button
                     key={option}
                     onClick={() => console.log(`${option} clicked`)}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-gray-100 w-full text-left"
                   >
                     {option}
                   </button>
@@ -107,7 +107,7 @@ const Solting = () => {
                   <button
                     key={option}
                     onClick={() => handleItemsPerPageSelect(option)}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full"
+                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-gray-100 w-full"
                   >
                     {option}
                   </button>
@@ -135,7 +135,7 @@ const Solting = () => {
                   <button
                     key={option}
                     onClick={() => console.log(`${option} clicked`)}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                    className="block px-4 py-2 text-small text-[--darkblue] hover:bg-gray-100 w-full text-left"
                   >
                     {option}
                   </button>
@@ -161,7 +161,7 @@ const Solting = () => {
             <div>
               <Image src={Filter} alt="filter" width={40} height={40} />
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </div>

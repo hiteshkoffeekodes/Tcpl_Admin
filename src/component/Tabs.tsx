@@ -24,7 +24,7 @@ function Tabs({
         <li key={index}>
           <button
             type="button"
-            className={`cursor-pointer text-small font-semibold px-4 py-3 uppercase ${
+            className={`cursor-pointer text-smallall font-semibold px-4 py-3 uppercase ${
               item.setvalue === aboutTab
                 ? "bg-[--poptishyam] text-[--white] rounded-t-md"
                 : "bg-[--]"

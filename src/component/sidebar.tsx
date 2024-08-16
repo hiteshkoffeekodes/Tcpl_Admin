@@ -142,7 +142,7 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }: any) => {
                   ].map((subItem) => (
                     <p
                       key={subItem.label}
-                      className="cursor-pointer text-small text-[--black] font-normal hover:text-[--poptishyam]"
+                      className="cursor-pointer text-smallall text-[--black] font-normal hover:text-[--poptishyam]"
                       onClick={() => handleSubItemClick(subItem.path)}
                     >
                       {subItem.label}
@@ -162,7 +162,7 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }: any) => {
                   ].map((subItem) => (
                     <p
                       key={subItem.label}
-                      className="cursor-pointer text-small text-[--black] font-normal hover:text-[--poptishyam]"
+                      className="cursor-pointer text-smallall text-[--black] font-normal hover:text-[--poptishyam]"
                       onClick={() => handleSubItemClick(subItem.path)}
                     >
                       {subItem.label}

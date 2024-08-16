@@ -48,7 +48,7 @@ const Login = () => {
                 </div>
               </div>
               <div className="space-y-5 py-3">
-                <ul className="text-small font-normal text-[--darkblue] ">
+                <ul className="text-smallall font-normal text-[--darkblue] ">
                   <li className="pb-1">User name</li>
                   <input
                     id="Name"
@@ -57,7 +57,7 @@ const Login = () => {
                     placeholder="Enter your email id"
                   />
                 </ul>
-                <ul className="text-small font-normal text-[--darkblue] ">
+                <ul className="text-smallall font-normal text-[--darkblue] ">
                   <li className="pb-1">Password</li>
                   <input
                     id="Name"
@@ -67,7 +67,7 @@ const Login = () => {
                   />
                 </ul>
                 <ul className="flex justify-between">
-                  <li className="text-small font-normal text-[--darkblue] gap-2 flex justify-center items-center">
+                  <li className="text-smallall font-normal text-[--darkblue] gap-2 flex justify-center items-center">
                     <input
                       id="default-checkbox"
                       type="checkbox"
@@ -76,12 +76,12 @@ const Login = () => {
                     />
                     <h1>Remember me</h1>
                   </li>
-                  <li className="text-small font-normal text-[--darkblue]">
+                  <li className="text-smallall font-normal text-[--darkblue]">
                     Forgot Password
                   </li>
                 </ul>
               </div>
-              <button className="bg-[--darkpopti] font-medium text-small text-white w-full py-3 rounded-lg uppercase">
+              <button className="bg-[--darkpopti] font-medium text-smallall text-[--white] w-full py-3 rounded-lg uppercase">
                 LOGIN
               </button>
             </div>

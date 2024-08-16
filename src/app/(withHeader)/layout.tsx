@@ -69,7 +69,7 @@ const Layout = ({ children }: { children: any }) => {
                 <div className="pt-2 shadow-lg">
                   <button className="bg-[--darkpopti] px-2 py-1 flex gap-3 justify-center rounded-md items-center text-center">
                     <Image src={help} alt="help" />
-                    <h6 className="uppercase text-[--white] font-semibold text-small">
+                    <h6 className="uppercase text-[--white] font-semibold text-smallall">
                       help
                     </h6>
                   </button>
@@ -103,7 +103,7 @@ const Layout = ({ children }: { children: any }) => {
         </div>
         {/* copyright */}
         <div className="border border-[--serviceborder] p-2 pl-10 fixed bottom-0 inset-x-0 bg-[--white] ">
-          <h1 className="text-small font-normal text-[--darkblue]">
+          <h1 className="text-smallall font-normal text-[--darkblue]">
             Copyright @ 2024 TCPL
           </h1>
         </div>
