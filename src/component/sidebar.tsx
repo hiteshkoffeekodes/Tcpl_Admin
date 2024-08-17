@@ -39,6 +39,10 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }: any) => {
     router.push("/setting");
   };
 
+   const toggleAdmin = () => {
+     router.push("/admin");
+   };
+
   const handleSubItemClick = (path: string) => {
     router.push(path);
   };
@@ -122,6 +126,8 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }: any) => {
                     ? toggleMaster
                     : item.alt === "Setting"
                     ? toggleSetting
+                    : item.alt === "Admin"
+                    ? toggleAdmin
                     : undefined
                 }
               >

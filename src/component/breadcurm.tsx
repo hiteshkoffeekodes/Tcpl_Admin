@@ -9,7 +9,6 @@ function Breadcurm({
   secondlink,
   thirdlink,
   cancelbtn,
-  prebtn,
   addbtn,
   handleTabClick,
   url,

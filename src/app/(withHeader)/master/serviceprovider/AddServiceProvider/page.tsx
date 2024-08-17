@@ -28,7 +28,8 @@ const AddServiceProviderModel = () => {
         mainlink="Masters / Add Service providers"
         updatebtn="clear all"
         submitbtn="saved"
-        backurl="/master/serviceprovider/AddServiceProvider"
+        backbtn="<-"
+        backurl="/master/serviceprovider"
       />
 
       <div className="w-full h-full p-3 ">

@@ -61,12 +61,10 @@ const YoutubeTable = () => {
   };
 
   const handleEdit = (index: any) => {
-    // Add your edit logic here
     setDropdownOpen(null);
   };
 
   const handleDelete = (index: any) => {
-    // Add your delete logic here
     setDropdownOpen(null);
   };
 
