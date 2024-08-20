@@ -10,18 +10,17 @@ const ServiceProviderModel = () => {
   const chargeOptions = ["Fixed", "Percentage", "Slabwise"];
   const [dropdownOpen, setDropdownOpen] = useState(null);
 
+  const router = useRouter();
 
-   const router = useRouter();
+  const handleEdit = (index: any) => {
+    console.log("Edit clicked for index: ", index);
+    router.push(`/master/serviceprovider/UpdateServiceProvider`);
+    setDropdownOpen(null);
+  };
 
-   const handleEdit = (index: any) => {
-     console.log("Edit clicked for index: ", index);
-     router.push(`/master/serviceprovider/UpdateServiceProvider`);
-     setDropdownOpen(null);
-   };
-
-    const handleActionClick = (index: any) => {
-      setDropdownOpen(dropdownOpen === index ? null : index);
-    };
+  const handleActionClick = (index: any) => {
+    setDropdownOpen(dropdownOpen === index ? null : index);
+  };
 
   return (
     <Maincontent>
@@ -43,7 +42,7 @@ const ServiceProviderModel = () => {
             <p>Service Provider Name</p>
             <input
               id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4 pr-20 mt-2 "
+              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
               type="text"
               placeholder="Enter Your Text Here"
             />
@@ -52,7 +51,7 @@ const ServiceProviderModel = () => {
             <p>Label</p>
             <input
               id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4 pr-20 mt-2 "
+              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
               type="text"
               placeholder="Enter Your Text Here"
             />
@@ -76,7 +75,7 @@ const ServiceProviderModel = () => {
             <p>Charge Rate</p>
             <input
               id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4 pr-20 mt-2 "
+              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
               type="text"
               placeholder="Enter Your Text Here"
             />
@@ -96,7 +95,7 @@ const ServiceProviderModel = () => {
             <p>Charge Rate</p>
             <input
               id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4 pr-20 mt-2 "
+              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
               type="text"
               placeholder="Enter Your Text Here"
             />

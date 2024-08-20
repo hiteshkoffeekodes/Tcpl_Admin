@@ -108,10 +108,14 @@ const AdminTable = () => {
   const router = useRouter();
 
   const handleEdit = (index: any) => {
-    console.log("Edit clicked for index: ", index);
     router.push(`/master/serviceprovider/UpdateServiceProvider`);
     setDropdownOpen(null);
   };
+
+    const handleView = (index: any) => {
+      router.push(`/admin/AdminOverView`); 
+      setDropdownOpen(null);
+    };
 
   const handleActionClick = (index: any) => {
     setDropdownOpen(dropdownOpen === index ? null : index);
@@ -263,7 +267,7 @@ const AdminTable = () => {
                             Edit
                           </button>
                           <button
-                            onClick={() => handleEdit(index)}
+                            onClick={() => handleView(index)}
                             className="block px-4 py-2 text-small text-[--darkblue] hover:bg-[--serviceborder] w-full text-left"
                           >
                             View

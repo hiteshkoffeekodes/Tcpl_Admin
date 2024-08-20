@@ -98,7 +98,6 @@ const Service = () => {
           title="Services"
           mainlink="Masters / services "
           addbtn={aboutTab !== "youtube" && "add services"}
-          // backbtn={"<-"}
           handleTabClick={handleTabClick}
         />
         <Solting />
