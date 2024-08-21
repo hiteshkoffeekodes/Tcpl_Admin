@@ -36,7 +36,8 @@ function YoutubeModel({ model, setModel, modeltitle, children }: any) {
                     <input
                       id="title"
                       type="text"
-                      className=" appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+                      placeholder="Enter your Text here"
+                      className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
@@ -48,9 +49,10 @@ function YoutubeModel({ model, setModel, modeltitle, children }: any) {
                       Upload Image
                     </label>
                     <input
-                      id="image"
-                      type="file"
-                      className=" appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+                      id="title"
+                      type="text"
+                      placeholder="Enter your Text here"
+                      className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 
@@ -62,9 +64,10 @@ function YoutubeModel({ model, setModel, modeltitle, children }: any) {
                       Upload Image for Mobile
                     </label>
                     <input
-                      id="mobileImage"
-                      type="file"
-                      className=" appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+                      id="title"
+                      type="text"
+                      placeholder="Enter your Text here"
+                      className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 

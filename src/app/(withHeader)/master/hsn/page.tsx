@@ -188,8 +188,8 @@ const Hsn = () => {
           <div className="h-[calc(100%-169px)] overflow-auto  whitespace-nowrap">
             <table className="min-w-full ">
               <thead>
-                <tr className="bg-[--white] border border-[--serviceborder] sticky shrink-0 top-[0px] z-[1] border-t-0 text-small font-semibold">
-                  <th>
+                <tr className="bg-[--white] border border-[--serviceborder] sticky shrink-0 top-[0px] z-[1] border-t-0 text-small space-x-5 font-semibold">
+                  <th className="p-3 lg:p-0">
                     <input
                       id="default-checkbox"
                       type="checkbox"
@@ -210,7 +210,7 @@ const Hsn = () => {
                     Description
                   </th>
 
-                  <th className=" border-b py-2 border-[--serviceborder] text-center w-[2%] pr-3">
+                  <th className="  py-2 border-[--serviceborder]  border-l p-3 text-center w-[2%] pr-3">
                     Action
                   </th>
                 </tr>
@@ -239,7 +239,7 @@ const Hsn = () => {
                       {item.description}
                     </td>
 
-                    <td className=" text-[--darkblue] border-b border-[--serviceborder] text-center relative">
+                    <td className="border-l text-[--darkblue] border-b border-[--serviceborder] text-center relative">
                       <button
                         onClick={() => handleActionClick(index)}
                         className="focus:outline-none pt-2"

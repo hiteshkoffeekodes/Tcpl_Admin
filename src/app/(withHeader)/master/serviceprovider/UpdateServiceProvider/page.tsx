@@ -41,19 +41,19 @@ const ServiceProviderModel = () => {
           <div className="w-[23%] space-y-3">
             <p>Service Provider Name</p>
             <input
-              id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+              id="title"
               type="text"
-              placeholder="Enter Your Text Here"
+              placeholder="Enter your Text here"
+              className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
           <div className="w-[23%] space-y-3">
             <p>Label</p>
             <input
-              id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+              id="title"
               type="text"
-              placeholder="Enter Your Text Here"
+              placeholder="Enter your Text here"
+              className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
           <div className="w-[23%] space-y-3">
@@ -74,10 +74,10 @@ const ServiceProviderModel = () => {
           <div className="w-[23%] space-y-3">
             <p>Charge Rate</p>
             <input
-              id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+              id="title"
               type="text"
-              placeholder="Enter Your Text Here"
+              placeholder="Enter your Text here"
+              className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
         </div>
@@ -94,10 +94,10 @@ const ServiceProviderModel = () => {
           <div className="w-[23%] space-y-3">
             <p>Charge Rate</p>
             <input
-              id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+              id="title"
               type="text"
-              placeholder="Enter Your Text Here"
+              placeholder="Enter your Text here"
+              className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
         </div>

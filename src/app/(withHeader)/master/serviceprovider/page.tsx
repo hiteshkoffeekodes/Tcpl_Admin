@@ -139,7 +139,7 @@ const ServiceProviderTable = () => {
             <table className="min-w-full">
               <thead>
                 <tr className="bg-[--white] border border-t-0 border-b border-[--serviceborder] sticky shrink-0 top-[0px] z-[1] text-small font-semibold">
-                  <th className="pl-3">
+                  <th className="p-3">
                     <input
                       id="default-checkbox"
                       type="checkbox"
@@ -153,7 +153,7 @@ const ServiceProviderTable = () => {
                   <th className="border-b py-2 border-[--serviceborder] text-start">
                     Service Name
                   </th>
-                  <th className="border-b py-2 border-[--serviceborder] text-start w-[15%]">
+                  <th className="border-b py-2 border-[--serviceborder] text-start w-[15%] pl-3">
                     Service Provider Name
                   </th>
                   <th className="border-b py-2 border-[--serviceborder] text-start w-[11%]">
@@ -174,7 +174,7 @@ const ServiceProviderTable = () => {
                   <th className="p-3 whitespace-nowrap text-start w-[5%]">
                     On / Off
                   </th>
-                  <th className="border-b py-2 border-[--serviceborder] text-center w-[2%] pr-3">
+                  <th className="border-b py-2 border-[--serviceborder]  border-l p-3 text-center w-[2%] pr-3">
                     Action
                   </th>
                 </tr>
@@ -182,7 +182,7 @@ const ServiceProviderTable = () => {
               <tbody className="border-[--serviceborder] border text-small font-medium">
                 {tableData.map((item, index) => (
                   <tr key={index} className="hover:bg-[lightlightblue]">
-                    <td className=" border-b pl-3 border-[--serviceborder] text-center">
+                    <td className=" border-b border-[--serviceborder] text-center">
                       <input
                         id="default-checkbox"
                         type="checkbox"
@@ -233,7 +233,7 @@ const ServiceProviderTable = () => {
                       />
                     </td>
 
-                    <td className="border-b border-[--serviceborder] text-center relative">
+                    <td className="border-b border-l border-[--serviceborder] text-center relative">
                       <button
                         onClick={() => handleActionClick(index)}
                         className="focus:outline-none pt-2"

@@ -5,16 +5,17 @@
 :root {
   --font-weight: normal;
   --white: #FFFFFF;
-  --black:#000000;
+  --black: #000000;
   --lightgreen: #DAF1EB;
   --darkblue: #032930;
   --darkpopti: #3EA089;
+  --backpoppti: #246153;
   --numberblue: #065363;
   --ghatopopti: #91D4C4;
   --poptishyam: #3EA089;
   --lightlightblue: #EDF8F5;
   --serviceborder: #B6E2D8;
-  --blacctype:##072B2C;
+  --blacctype: #072B2C;
 }
 
 body {
@@ -22,25 +23,24 @@ body {
 }
 
 * {
-font-family: "Saira", sans-serif;
+  font-family: "Saira", sans-serif;
 }
 
-.horizontal-scroll::-webkit-scrollbar {
+*::-webkit-scrollbar {
   @apply h-[2px] w-[2px] bg-[--white];
 }
 
-.horizontal-scroll::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   @apply rounded-[1px] bg-[--poptishyam];
 }
 
-.horizontal-scroll::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   @apply rounded-[1px] bg-[--white];
 }
 
 .button {
   @apply bg-[--poptishyam] px-3 py-[7px] md:py-2 text-[--white] uppercase font-medium rounded-[5px] transition-all ease-in duration-300;
 }
-
 
 .custom-md-block {
   display: none;

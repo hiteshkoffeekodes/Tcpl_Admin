@@ -29,7 +29,10 @@ const Solting = () => {
     <div className="bg-[--white] shrink-0 lg:top-[106px] w-full  horizontal-scroll">
       <div className="flex justify-between text-font-medium border-t-0 border border-[--serviceborder] border-l-0">
         <div className="border border-[--serviceborder] border-y-0 hidden md:flex">
-          <div className="relative border border-[--serviceborder] border-y-0 border-l-0 flex justify-between gap-5 px-3 py-2">
+          <button
+            className="relative border border-[--serviceborder] border-y-0 border-l-0 flex justify-between gap-5 px-3 py-2"
+            onClick={handleItemsPerPageToggle}
+          >
             <div className="border border-[--serviceborder] flex gap-6 rounded-md p-2">
               <p>{selectedItems}</p>
               <div className="pt-1">
@@ -38,7 +41,6 @@ const Solting = () => {
                   alt="dropdown arrow"
                   width={18}
                   height={18}
-                  onClick={handleItemsPerPageToggle}
                   className="cursor-pointer"
                 />
               </div>
@@ -56,8 +58,11 @@ const Solting = () => {
                 ))}
               </div>
             )}
-          </div>
-          <div className="relative flex justify-between gap-5 px-3 py-2">
+          </button>
+          <button
+            className="relative flex justify-between gap-5 px-3 py-2"
+            onClick={handleSelectToggle}
+          >
             <div className="border border-[--serviceborder] flex gap-20 rounded-md p-2">
               <p>Select</p>
               <div className="pt-1">
@@ -66,7 +71,6 @@ const Solting = () => {
                   alt="dropdown arrow"
                   width={18}
                   height={18}
-                  onClick={handleSelectToggle}
                   className="cursor-pointer"
                 />
               </div>
@@ -84,7 +88,7 @@ const Solting = () => {
                 ))}
               </div>
             )}
-          </div>
+          </button>
         </div>
         {/* <div className="flex border border-[--serviceborder] border-y-0 ">
           <div className="relative border  border-[--serviceborder] border-y-0 border-l-0 flex justify-between gap-5 px-3 py-2">
@@ -145,7 +149,7 @@ const Solting = () => {
           </div>
         </div> */}
         <div className="flex space-x-5 justify-center items-center">
-          <div className="flex pl-3 border border-[--serviceborder] rounded-md m-2">
+          {/* <div className="flex pl-3 border border-[--serviceborder] rounded-md m-2">
             <input
               id="Name"
               className="w-full py-2 px-6"
@@ -153,6 +157,17 @@ const Solting = () => {
               placeholder="Search..."
             />
             <div className="pt-2 pr-2">
+              <Image src={Search} alt="search" />
+            </div>
+          </div> */}
+          <div className="relative">
+            <input
+              id="title"
+              type="text"
+              placeholder="Enter your Text here"
+              className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 pr-10 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+            />
+            <div className="pt-2 pr-2 absolute z-1 right-0 top-0">
               <Image src={Search} alt="search" />
             </div>
           </div>

@@ -26,37 +26,37 @@ const AddServiceProviderModel = () => {
       <Breadcurm
         title="Add Service providers"
         mainlink="Masters / Add Service providers"
-        updatebtn="clear all"
-        submitbtn="saved"
-        backbtn="<-"
+        backbtn="cancel"
+        submitbtn="submit"
+        // backbtn="<-"
         backurl="/master/serviceprovider"
       />
 
-      <div className="w-full h-full p-3 ">
-        <div className="pt-4 flex gap-10">
-          <div className="w-[23%] space-y-3">
+      <div className="w-full p-3 overflow-auto h-[calc(100vh-250px)]">
+        <div className="pt-4 lg:flex gap-10 lg:space-y-0 space-y-3">
+          <div className="lg:w-[23%] space-y-3">
             <p>Service Name</p>
             <TableSelect />
           </div>
-          <div className="w-[23%] space-y-3">
+          <div className="lg:w-[23%] space-y-3">
             <p>Service Provider Name</p>
             <input
-              id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+              id="title"
               type="text"
-              placeholder="Enter Your Text Here"
+              placeholder="Enter your Text here"
+              className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
-          <div className="w-[23%] space-y-3">
+          <div className="lg:w-[23%] space-y-3">
             <p>Label</p>
             <input
-              id="Name"
-              className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+              id="title"
               type="text"
-              placeholder="Enter Your Text Here"
+              placeholder="Enter your Text here"
+              className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
-          <div className="w-[23%] space-y-3">
+          <div className="lg:w-[23%] space-y-3">
             <p>Hsn/Sac</p>
             <TableSelect />
           </div>
@@ -65,12 +65,12 @@ const AddServiceProviderModel = () => {
         {/* charges from-to  */}
         <div>
           {/* from */}
-          <div className="pt-4 flex gap-10">
-            <div className="w-[23%] space-y-3">
+          <div className="pt-4 lg:flex gap-10">
+            <div className="lg:w-[23%] space-y-3">
               <p>Charges Type</p>
               <TableSelectUpdateService />
             </div>
-            <div className="w-[23%] space-y-3">
+            <div className="lg:w-[23%] space-y-3">
               <p>Charges Rate Type</p>
               <TableSelectUpdateService />
             </div>
@@ -86,12 +86,12 @@ const AddServiceProviderModel = () => {
           </div>
 
           {/* to */}
-          <div className="pt-4 flex gap-10">
-            <div className="w-[23%] space-y-3">
+          <div className="pt-4 lg:flex gap-10">
+            <div className="lg:w-[23%] space-y-3">
               <p>Charges Type</p>
               <TableSelectUpdateService />
             </div>
-            <div className="w-[23%] space-y-3">
+            <div className="lg:w-[23%] space-y-3">
               <p>Charges Rate Type</p>
               <TableSelectUpdateService />
             </div>

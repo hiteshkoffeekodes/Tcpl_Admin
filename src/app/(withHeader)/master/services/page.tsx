@@ -111,8 +111,8 @@ const Service = () => {
           <div className="h-[calc(100%-65px)] overflow-auto  whitespace-nowrap">
             <table className="min-w-full">
               <thead>
-                <tr className="bg-[--white] border border-t-0  border-[--serviceborder] sticky shrink-0 top-[0px] z-[1] text-small font-semibold">
-                  <th>
+                <tr className="bg-[--white] border border-t-0 border-[--serviceborder] sticky shrink-0 top-[0px] z-[1] text-small font-semibold">
+                  <th className="  p-3 lg:p-0 ">
                     <input
                       id="default-checkbox"
                       type="checkbox"
@@ -137,7 +137,7 @@ const Service = () => {
                     On / Off
                   </th>
 
-                  <th className=" border-b py-2 border-[--serviceborder] text-center w-[2%] pr-3">
+                  <th className=" border-b py-2  border-l p-3 border-[--serviceborder] text-center w-[2%] pr-3">
                     Action
                   </th>
                 </tr>
@@ -172,14 +172,14 @@ const Service = () => {
                         {item.status}
                       </div>
                     </td>
-                    <td className="  text-start">
+                    <td className=" text-start">
                       <Toggle
                         onOff={item.onOff}
                         onToggle={() => handleToggle(item.id)}
                       />
                     </td>
 
-                    <td className=" text-center relative">
+                    <td className=" border-l border-[--serviceborder] text-center relative">
                       <button
                         onClick={() => handleActionClick(index)}
                         className="focus:outline-none pt-2"

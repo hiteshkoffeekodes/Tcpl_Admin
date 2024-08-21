@@ -161,7 +161,7 @@ const AdminTable = () => {
             <table className="min-w-full">
               <thead>
                 <tr className="bg-[--white] border border-t-0 border-b border-[--serviceborder] sticky shrink-0 top-[0px] z-[1] text-small font-semibold">
-                  <th>
+                  <th className="p-3">
                     <input
                       id="default-checkbox"
                       type="checkbox"
@@ -193,8 +193,7 @@ const AdminTable = () => {
                   <th className="p-3 whitespace-nowrap text-center w-[7%]">
                     Status
                   </th>
-
-                  <th className="border-b py-2 border-[--serviceborder] text-center w-[2%] pr-3">
+                  <th className="border-b py-2 border-l p-3 border-[--serviceborder] text-center w-[2%] pr-3">
                     Action
                   </th>
                 </tr>
@@ -246,8 +245,8 @@ const AdminTable = () => {
                         {item.status}
                       </div>
                     </td>
-
-                    <td className="border-b border-[--serviceborder] text-center relative">
+ 
+                    <td className="border-b border-l border-[--serviceborder] text-center relative">
                       <button
                         onClick={() => handleActionClick(index)}
                         className="focus:outline-none pt-2"

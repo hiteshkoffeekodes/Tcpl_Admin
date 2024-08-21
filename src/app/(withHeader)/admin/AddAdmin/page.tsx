@@ -3,9 +3,6 @@ import Maincontent from "@/app/maincontext";
 import TableSelect from "@/component/TableSelect";
 import React, { useState } from "react";
 import Breadcurm from "@/component/breadcurm";
-// import TableSelectUpdateService from "@/component/tableSelectUpdateService";
-// import SlabModel from "../../master/serviceprovider/AddServiceProvider/SlabModel/page";
-// import ServiceProviderSlabTableTo from "../../master/serviceprovider/AddServiceProvider/AddServiceProviderTableSlabTo/page";
 import Image from "next/image";
 import Vector from "../../../../../public/image/admin vector.svg";
 import Pan from "../../../../../public/image/pan admin.svg";
@@ -40,7 +37,6 @@ const AddAdminModel = ({ model, setModel }: any) => {
         title="Add Admin"
         mainlink="Masters / Admin"
         thirdlink={`${aboutTab}`}
-        // updatebtn="cancel"
         addbtn="continue"
         backbtn="cancel"
         backurl="/admin"
@@ -72,54 +68,54 @@ const AddAdminModel = ({ model, setModel }: any) => {
               </h1>
             </div>
           </div>
-          <div className="w-full flex justify-between pt-5">
+          <div className="w-full md:flex justify-between pt-5">
             <div className="w-full ">
-              <div className="pt-4 flex gap-10">
-                <div className="w-[41%] space-y-3">
+              <div className="pt-4 lg:flex lg:gap-10">
+                <div className="lg:w-[41%] space-y-3">
                   <p className="text-[--darkblue] text-small font-medium">
                     Name
                   </p>
                   <input
-                    id="Name"
-                    className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+                    id="title"
                     type="text"
-                    placeholder="Enter Your Text Here"
+                    placeholder="Enter your Text here"
+                    className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                   />
                 </div>
               </div>
-              <div className="pt-4 flex gap-10">
-                <div className="w-[19%] space-y-3">
+              <div className="pt-4 lg:flex gap-10">
+                <div className="lg:w-[19%] space-y-3">
                   <p className="text-[--darkblue] text-small font-medium">
                     Phone Number
                   </p>
                   <input
-                    id="Name"
-                    className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+                    id="title"
                     type="text"
-                    placeholder="Enter Your Text Here"
+                    placeholder="Enter your Text here"
+                    className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                   />
                 </div>
-                <div className="w-[19%] space-y-3">
+                <div className="lg:w-[19%] space-y-3">
                   <p className="text-[--darkblue] text-small font-medium">
                     Email
                   </p>
                   <input
-                    id="Name"
-                    className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4   mt-2 "
+                    id="title"
                     type="text"
-                    placeholder="Enter Your Text Here"
+                    placeholder="Enter your Text here"
+                    className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                   />
                 </div>
               </div>
-              <div className="pt-4 flex gap-10">
-                <div className="w-[19%] space-y-3">
+              <div className="pt-4 lg:flex gap-10">
+                <div className="lg:w-[19%] space-y-3">
                   <p className="text-[--darkblue] text-small font-medium">
                     Upload Document
                   </p>
                   <TableSelect />
                 </div>
                 <button
-                  className="bg-[--darkpopti] text-[--white] p-2 px-5 rounded-md font-semibold mt-9"
+                  className="bg-[--darkpopti] text-[--white] p-2 px-5 rounded-md font-semibold md:mt-8 mt-3"
                   onClick={handleTabClick}
                 >
                   UPLOAD
@@ -127,7 +123,7 @@ const AddAdminModel = ({ model, setModel }: any) => {
               </div>
             </div>
             <div className="space-y-3">
-              <h3 className="text-[--blacctype] text-xsmall font-normal">
+              <h3 className="text-[--blacctype] text-xsmall font-normal pt-5 lg:pt-0">
                 Product images
               </h3>
               <div className="p-10  border border-[--serviceborder] rounded-md grid justify-center items-center text-center">
@@ -146,7 +142,7 @@ const AddAdminModel = ({ model, setModel }: any) => {
               </div>
             </div>
           </div>
-          <div className="flex pt-3 space-x-5">
+          <div className="md:flex space-y-3 pt-3 lg:space-y-0 lg:space-x-5">
             <div className="border border-[--serviceborder] rounded-md">
               <div className="bg-[--serviceborder] flex justify-center items-center text-center">
                 <h1 className="text-[--darkblue] text-[10px] font-normal p-2">
@@ -181,20 +177,20 @@ const AddAdminModel = ({ model, setModel }: any) => {
             </div>
           </div>
 
-          <h1 className="text-[--darkblue] text-main-heading font-bold pt-10">
+          <h1 className="text-[--darkblue] text-xlarge lg:text-main-heading font-bold pt-10">
             Company/GST Information
           </h1>
           <div className=" w-full">
-            <div className="pt-4 grid grid-cols-4 gap-10">
-              <div className=" space-y-3 col-span-2">
+            <div className="pt-4 grid lg:grid-cols-4 gap-4 lg:gap-10">
+              <div className=" space-y-3 lg:col-span-2">
                 <p className="text-[--darkblue] text-small font-medium">
                   Company Name
                 </p>
                 <input
-                  id="Name"
-                  className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4  mt-2 "
+                  id="title"
                   type="text"
-                  placeholder="Enter Your Text Here"
+                  placeholder="Enter your Text here"
+                  className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                 />
               </div>
 
@@ -203,10 +199,10 @@ const AddAdminModel = ({ model, setModel }: any) => {
                   GST Number
                 </p>
                 <input
-                  id="Name"
-                  className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4  mt-2 "
+                  id="title"
                   type="text"
-                  placeholder="Enter Your Text Here"
+                  placeholder="Enter your Text here"
+                  className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                 />
               </div>
               <div className=" space-y-3">
@@ -221,27 +217,25 @@ const AddAdminModel = ({ model, setModel }: any) => {
                   Address
                 </p>
                 <input
-                  id="Name"
-                  className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4  mt-2 "
+                  id="title"
                   type="text"
-                  placeholder="Enter Your Text Here"
+                  placeholder="Enter your Text here"
+                  className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                 />
               </div>
               <div className=" space-y-3 ">
                 <p className="text-[--darkblue] text-small font-medium">
-                  State{" "}
+                  State
                 </p>
                 <input
-                  id="Name"
-                  className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4  mt-2 "
+                  id="title"
                   type="text"
-                  placeholder="Enter Your Text Here"
+                  placeholder="Enter your Text here"
+                  className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                 />
               </div>
               <div className=" space-y-3">
-                <p className="text-[--darkblue] text-small font-medium">
-                  City{" "}
-                </p>
+                <p className="text-[--darkblue] text-small font-medium">City</p>
                 <TableSelect />
               </div>
               <div className=" space-y-3 ">
@@ -249,10 +243,10 @@ const AddAdminModel = ({ model, setModel }: any) => {
                   Pin code
                 </p>
                 <input
-                  id="Name"
-                  className="border-[1px] border-[--serviceborder] rounded-md w-full py-2 px-4  mt-2 "
+                  id="title"
                   type="text"
-                  placeholder="Enter Your Text Here"
+                  placeholder="Enter your Text here"
+                  className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                 />
               </div>
               <div className=" space-y-3">
@@ -262,7 +256,7 @@ const AddAdminModel = ({ model, setModel }: any) => {
                 <TableSelect />
               </div>
               <button
-                className="bg-[--darkpopti] text-[--white] p-2 px-5 rounded-md font-semibold mt-9 w-[28%]"
+                className="bg-[--darkpopti] text-[--white] p-2 px-5 rounded-md font-semibold lg:mt-9 lg:w-[28%]"
                 onClick={handleTabClick}
               >
                 UPLOAD
@@ -276,12 +270,12 @@ const AddAdminModel = ({ model, setModel }: any) => {
               <p className="text-[--darkblue] text-small font-medium">
                 Document Type
               </p>
-              <div className="flex gap-10">
-                <div className="w-[23%]">
+              <div className="lg:flex gap-10 space-y-3 lg:space-y-0">
+                <div className="lg:w-[23%]">
                   <TableSelect />
                 </div>
                 <button
-                  className="bg-[--darkpopti] text-[--white] p-2 px-5 rounded-md font-semibold "
+                  className="bg-[--darkpopti] text-[--white] p-2 px-5 rounded-md font-semibold lg:mt-9 "
                   onClick={handleTabClick}
                 >
                   UPLOAD

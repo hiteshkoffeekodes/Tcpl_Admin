@@ -68,7 +68,7 @@ const SoltingContact = () => {
               />
             </div>
             {selectDropdownOpen && (
-              <div className="absolute mt-8 w-32 bg-white border rounded shadow-lg z-10 left-0 top-4">
+              <div className="absolute mt-8 w-32 bg-[--white] border rounded shadow-lg z-10 left-0 top-4">
                 {selectOptions.map((option) => (
                   <button
                     key={option}
@@ -90,7 +90,7 @@ const SoltingContact = () => {
             </div>
             <input
               id="Name"
-              className="border-[#CFA767] w-full py-2 px-6"
+              className="border-[--serviceborder] w-full py-2 px-6"
               type="Name"
               placeholder="Search..."
             />

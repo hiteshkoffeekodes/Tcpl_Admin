@@ -11,7 +11,7 @@ function ServiceModel({ model, setModel, modeltitle, children }: any) {
   return (
     <>
       {model && (
-        <div className="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[] justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full flex bg-black/50  transition-opacity duration-700 ">
+        <div className="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[4] justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full flex bg-black/50  transition-opacity duration-700 ">
           <div className="relative p-4 w-full max-w-[380px] max-h-full">
             <div className="relative bg-[--bg-white] rounded-md shadow ">
               <div className="flex items-center bg-[--serviceborder] justify-between p-4 border-b border-[--serviceborder] rounded-t">
@@ -37,7 +37,8 @@ function ServiceModel({ model, setModel, modeltitle, children }: any) {
                     <input
                       id="title"
                       type="text"
-                      className=" appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
+                      placeholder="Enter your Text here"
+                      className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
 

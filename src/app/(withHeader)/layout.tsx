@@ -55,15 +55,15 @@ const Layout = ({ children }: { children: any }) => {
               </div>
 
               <div className="flex justify-center items-center space-x-5 absolute right-5 top-3">
-                <div className="shadow-lg hidden md:block">
-                  <button className="absolute right-48 top-4">
+                <div className="shadow-lg hidden md:block w-96">
+                  <button className="absolute right-48 top-3 bg-[--white]">
                     <Image src={search} alt="search" />
                   </button>
                   <input
-                    id="Name"
-                    className="border-[1px] w-full py-2 px-4   mt-2 focus:outline-none"
+                    id="title"
                     type="text"
-                    placeholder="Search"
+                    placeholder="Enter your Text here"
+                    className="appearance-none border border-[--serviceborder] rounded w-full py-2 px-3 text-[--darkblue] leading-tight focus:outline-none focus:shadow-outline"
                   />
                 </div>
                 <div className="pt-2 shadow-lg">

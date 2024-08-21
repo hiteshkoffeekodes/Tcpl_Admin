@@ -39,9 +39,9 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }: any) => {
     router.push("/setting");
   };
 
-   const toggleAdmin = () => {
-     router.push("/admin");
-   };
+  const toggleAdmin = () => {
+    router.push("/admin");
+  };
 
   const handleSubItemClick = (path: string) => {
     router.push(path);
@@ -142,7 +142,7 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }: any) => {
                   {[
                     { label: "Home Page", path: "/web/home" },
                     { label: "About Us", path: "/web/aboutUs" },
-                    { label: "Services", path: "/web/services" },
+                    // { label: "Services", path: "/web/services" },
                     { label: "Random Stuff", path: "/web/randomstuff" },
                     { label: "Contact Enquiry", path: "/web/contactenquiry" },
                   ].map((subItem) => (
